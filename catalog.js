@@ -1,19 +1,21 @@
 "use strict";
 
-function Catalog(){
-  this.products = {};
-}
+class Catalog {
+  constructor(){
+    this.products = {};
+  }
 
-Catalog.prototype.addProduct = function(product){
-  this.products[product.getId()] = product;
-}
+  addProduct(product){
+    this.products[product.getId()] = product;
+  }
 
-Catalog.prototype.lookupProduct = function(productId) {
-  return this.products[productId];
-}
+  lookupProduct(productId) {
+    return this.products[productId];
+  }
 
-Catalog.prototype.size = function(){
-  return Object.keys(this.products).length;
+  size(){
+    return Object.keys(this.products).length;
+  }
 }
 
 module.exports = Catalog;
