@@ -19,7 +19,7 @@ test('the product returns its id', () => {
 test('it generates the line item information for a product', () => {
   let sauce = new Product(1, 'pasta sauce', 10);
 
-  expect(sauce.getLineItemDescription()).toBe('pasta sauce:\t10');
+  expect(sauce.getLineItemDescription()).toBe('pasta sauce:\t10.00');
 });
 
 test('it adds product to catalog', () => {
@@ -30,12 +30,12 @@ test('it adds product to catalog', () => {
   expect(catalog.size()).toBe(1);
 });
 
-test('it looks up a product in catalog', () => {
+test('it looks up a product by id in the catalog', () => {
   let catalog = new Catalog();
   let sauce = new Product(1, 'pasta sauce', 15);
   catalog.addProduct(sauce);
 
-  expect(catalog.lookupPrice(sauce.getId())).toBe(15);
+  expect(catalog.lookupProduct(sauce.getId())).toBe(sauce);
 });
 
 test('it generates a bill for the products purchased', () => {
@@ -50,7 +50,7 @@ test('it generates a bill for the products purchased', () => {
 
   till.ringProduct(1);
   till.ringProduct(1);
-  till.ringProduct(2);
+  till.ringProduct(3);
 
   expect(till.generateBill()).toEqual(`pasta sauce:\t3.00
 pasta sauce:\t3.00
