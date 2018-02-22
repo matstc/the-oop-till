@@ -13,7 +13,7 @@ The objects under test:
 
 Simply run `yarn install` at the top-level to install the required modules.
 
-Then run `jest` to run all tests.
+Then run `yarn jest` to run all tests.
 
 All tests in `the-oop-till.test.js` should be made to pass. You can start with the first test at the top and make your way down. **Do not modify the tests**. You should be able to make them pass simply by fleshing out the code under test.
 
@@ -25,7 +25,7 @@ The code starts out using prototypal inheritance: you can just flesh out the fun
 
 # ES6 Classes
 
-Once your tests are passing, convert your objects to ES6 class syntax. For example, a skeleton of the Product class would look like this:
+Once your tests are passing, convert your objects to ES6 class syntax. For example, a skeleton of the `Product` class would look like this:
 
 ```javascript
 class Product {
@@ -43,7 +43,7 @@ class Product {
 }
 ```
 
-# Alternatives to Object-oriented Programming
+# Alternatives to Object-Oriented Programming
 
 Some consider constructor functions and classes an anti-pattern in JavaScript.
 
