@@ -4,7 +4,7 @@ function Catalog(){
 
 }
 
-Catalog.prototype.addProduct = function(productId, preTaxPrice){
+Catalog.prototype.addProduct = function(product){
 
 }
 
