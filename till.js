@@ -4,7 +4,7 @@ function Till(catalog, tax){
 
 }
 
-Till.prototype.ringProduct = function(product){
+Till.prototype.ringProduct = function(productId){
 
 }
 
