@@ -1,6 +1,23 @@
 {
+  "name": "the-oop-till",
+  "version": "1.0.0",
+  "description": "An exercise in OO JavaScript",
   "dependencies": {
-    "jest": "^18.1.0",
-    "jest-cli": "^19.0.2"
-  }
+    "jest": "^22.4.0",
+    "jest-cli": "^22.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matstc/the-oop-till.git"
+  },
+  "author": "Matthieu Tanguay-Carel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matstc/the-oop-till/issues"
+  },
+  "homepage": "https://github.com/matstc/the-oop-till#readme"
 }
